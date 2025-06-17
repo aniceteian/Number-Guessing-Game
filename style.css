@@ -1,0 +1,121 @@
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-size: 1.25rem;
+  color: white;
+  font-family: sans-serif;
+}
+body{
+  height: 100dvh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-image: url(https://img.freepik.com/free-vector/gradient-numerology-background_23-2150051046.jpg?semt=ais_hybrid&w=740);
+  
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.container{
+  width: 45%;
+  height: auto;
+  padding: 20px 40px;
+}
+
+.container h1, .container p{
+  margin-bottom: 25px;
+}
+
+.container h1{
+  font-size: 30px;
+  color: #1877F2;
+}
+
+.guessField{
+  width: 100px;
+  height: 35px;
+  padding: 10px;
+  font-size: 0.875rem;
+  color: black;
+}
+
+.guessField:focus{
+  outline: #1877F2;
+  border: 2px solid #1877F2;
+}
+
+.guessSubmit{
+  width: 150px;
+  height: 32px;
+  border-radius: 10px;
+  border: none;
+  cursor: pointer;
+  margin-left: 10px;
+  background-color: #1877F2;
+  color: white;
+  font-size: 0.875rem;
+}
+
+.guessSubmit:hover{
+  background-color: #c30073;
+}
+
+.resultParams{
+  width: 41%;
+}
+
+.resultParams p {
+  max-width: 100%;
+  width: 100%;
+  box-sizing: border-box;
+  padding: 5px;
+}
+
+
+@media (max-width: 768px){
+  html, body {
+    padding: 0;
+    margin: 0;
+    overflow-x: hidden;
+  }
+
+  body{
+    justify-content: flex-start;
+    margin-top: 70px;
+  }
+
+  .container {
+    width: 80%;
+    padding: 20px; /* konting padding lang */
+  }
+
+  .resultParams p {
+    width: 100%;
+    max-width: 100%;
+    font-size: 20px;
+  }
+
+  .enter{
+    display: block;
+    margin-bottom: 20px;
+    font-size: 20px;
+  }
+
+  .guessSubmit{
+    width: 130px;
+  }
+
+  .container p{
+    font-size: 20px;
+  }
+
+  .container h1{
+    font-size: 25px;
+  }
+
+  .resultParams{
+    width: 73%;
+}
+}
